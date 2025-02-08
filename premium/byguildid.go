@@ -3,8 +3,9 @@ package premium
 import (
 	"context"
 	"errors"
-	"github.com/TicketsBot/common/model"
-	"github.com/TicketsBot/common/sentry"
+
+	"github.com/TicketsBot-cloud/common/model"
+	"github.com/TicketsBot-cloud/common/sentry"
 	"github.com/go-redis/redis/v8"
 	"github.com/rxdn/gdl/cache"
 	"github.com/rxdn/gdl/objects/guild"

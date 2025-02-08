@@ -1,7 +1,7 @@
 package sentry
 
 import (
-	"github.com/TicketsBot/common/utils"
+	"github.com/TicketsBot-cloud/common/utils"
 	"github.com/getsentry/sentry-go"
 	"github.com/sirupsen/logrus"
 )

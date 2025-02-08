@@ -4,9 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/TicketsBot/common/model"
-	"github.com/TicketsBot/common/sentry"
 	"time"
+
+	"github.com/TicketsBot-cloud/common/model"
+	"github.com/TicketsBot-cloud/common/sentry"
 )
 
 type CachedTier struct {

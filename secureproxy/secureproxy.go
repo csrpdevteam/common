@@ -6,10 +6,11 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/TicketsBot/common/sentry"
 	"io/ioutil"
 	"net/http"
 	"strconv"
+
+	"github.com/TicketsBot-cloud/common/sentry"
 )
 
 type Client struct {

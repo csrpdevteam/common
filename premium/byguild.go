@@ -2,10 +2,11 @@ package premium
 
 import (
 	"context"
-	"github.com/TicketsBot/common/model"
-	"github.com/TicketsBot/common/sentry"
-	"github.com/rxdn/gdl/objects/guild"
 	"time"
+
+	"github.com/TicketsBot-cloud/common/model"
+	"github.com/TicketsBot-cloud/common/sentry"
+	"github.com/rxdn/gdl/objects/guild"
 )
 
 const GracePeriod = time.Hour // TODO: Reduce this to zero?

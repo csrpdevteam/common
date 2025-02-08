@@ -4,9 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/TicketsBot/common/webproxy"
-	"github.com/go-redis/redis/v8"
 	"time"
+
+	"github.com/TicketsBot-cloud/common/webproxy"
+	"github.com/go-redis/redis/v8"
 )
 
 type (

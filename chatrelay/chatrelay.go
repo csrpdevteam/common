@@ -3,8 +3,9 @@ package chatrelay
 import (
 	"context"
 	"encoding/json"
-	"github.com/TicketsBot/common/utils"
-	"github.com/TicketsBot/database"
+
+	"github.com/TicketsBot-cloud/common/utils"
+	"github.com/TicketsBot-cloud/database"
 	"github.com/go-redis/redis/v8"
 	"github.com/rxdn/gdl/objects/channel/message"
 )
@@ -17,7 +18,8 @@ type MessageData struct {
 const channel = "tickets:chatrelay"
 
 func PublishMessage(redis *redis.Client, data MessageData) error {
-	marshalled, err := json.Marshal(data); if err != nil {
+	marshalled, err := json.Marshal(data)
+	if err != nil {
 		return err
 	}
 

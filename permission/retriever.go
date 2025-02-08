@@ -2,7 +2,8 @@ package permission
 
 import (
 	"context"
-	"github.com/TicketsBot/database"
+
+	"github.com/TicketsBot-cloud/database"
 	"github.com/rxdn/gdl/objects/member"
 	"github.com/rxdn/gdl/permission"
 )

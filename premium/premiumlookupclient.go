@@ -2,8 +2,9 @@ package premium
 
 import (
 	"context"
-	"github.com/TicketsBot/common/model"
-	"github.com/TicketsBot/database"
+
+	"github.com/TicketsBot-cloud/common/model"
+	"github.com/TicketsBot-cloud/database"
 	"github.com/go-redis/redis/v8"
 	"github.com/rxdn/gdl/cache"
 	"github.com/rxdn/gdl/objects/guild"

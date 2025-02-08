@@ -4,9 +4,10 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/TicketsBot/common/webproxy"
 	"net/http"
 	"time"
+
+	"github.com/TicketsBot-cloud/common/webproxy"
 )
 
 type User struct {

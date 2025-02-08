@@ -1,6 +1,6 @@
 package premium
 
-import "github.com/TicketsBot/common/model"
+import "github.com/TicketsBot-cloud/common/model"
 
 type PremiumTier int8
 

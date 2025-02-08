@@ -2,7 +2,8 @@ package premium
 
 import (
 	"context"
-	"github.com/TicketsBot/common/model"
+
+	"github.com/TicketsBot-cloud/common/model"
 	"github.com/go-redis/redis/v8"
 )
 

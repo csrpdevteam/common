@@ -2,9 +2,10 @@ package whitelabeldelete
 
 import (
 	"context"
-	"github.com/TicketsBot/common/utils"
-	"github.com/go-redis/redis/v8"
 	"strconv"
+
+	"github.com/TicketsBot-cloud/common/utils"
+	"github.com/go-redis/redis/v8"
 )
 
 const channel = "tickets:whitelabeldelete"

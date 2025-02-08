@@ -4,12 +4,13 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/TicketsBot/common/premium"
-	"github.com/TicketsBot/database"
+	"os"
+
+	"github.com/TicketsBot-cloud/common/premium"
+	"github.com/TicketsBot-cloud/database"
 	"github.com/go-redis/redis/v8"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/rxdn/gdl/cache"
-	"os"
 )
 
 var guildId = flag.Uint64("guildid", 0, "guild id to check")
@@ -28,9 +29,9 @@ func createClient() *premium.PremiumLookupClient {
 	patreonClient := premium.NewPatreonClient(os.Getenv("PATREON_URL"), os.Getenv("PATREON_KEY"))
 
 	redisClient := redis.NewClient(&redis.Options{
-		Network:            "tcp",
-		Addr:               os.Getenv("REDIS_ADDR"),
-		Password:           os.Getenv("REDIS_PASSWORD"),
+		Network:  "tcp",
+		Addr:     os.Getenv("REDIS_ADDR"),
+		Password: os.Getenv("REDIS_PASSWORD"),
 	})
 
 	cachePool, err := pgxpool.Connect(context.Background(), os.Getenv("CACHE_URI"))
