@@ -3,7 +3,7 @@ module github.com/TicketsBot-cloud/common
 go 1.22
 
 require (
-	github.com/TicketsBot-cloud/database v0.0.0-20250208132216-cdaec01eea5e
+	github.com/TicketsBot-cloud/database v0.0.0-20250208140247-a3ced2089495
 	github.com/getsentry/sentry-go v0.21.0
 	github.com/go-errors/errors v1.4.2
 	github.com/go-redis/redis/v8 v8.11.3
@@ -22,7 +22,6 @@ require (
 )
 
 require (
-	github.com/TicketsBot/common v0.0.0-20241104184641-e39c64bdcf3e // indirect
 	github.com/TicketsBot/ttlcache v1.6.1-0.20200405150101-acc18e37b261 // indirect
 	github.com/boltdb/bolt v1.3.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
