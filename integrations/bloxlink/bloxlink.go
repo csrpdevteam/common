@@ -24,7 +24,7 @@ var (
 )
 
 func RequestUserId(ctx context.Context, proxy *webproxy.WebProxy, bloxlinkApiKey string, userId uint64) (int, error) {
-	url := fmt.Sprintf("http://api.blox.link/v4/public/discord-to-roblox/%d", userId)
+	url := fmt.Sprintf("https://api.blox.link/v4/public/guilds/965829463512330260/discord-to-roblox/%d%", userId)
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 	if err != nil {
 		return 0, err
